@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 150px;
+			background-color: yellow;
+			position: relative;
+			animation-name: changeBackgroud;
+			animation-duration: 5s;
+			animation-delay: 0;
+			animation-direction: reverse;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes changeBackgroud{
+			0%{background-color: yellow; top:0; left: 0;}
+			50%{background-color: black; top: 0;left:200px;}
+			100%{background-color: green; top: 200px;left:200px;}
+			
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+</body>
+</html>

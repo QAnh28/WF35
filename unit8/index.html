@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="p1">Hello</p>
+	<p class="p2">Hello Word</p>
+	<p class="p2">Hello p</p>
+	<p id="p4">the p4</p>
+	<input id="test" type="text">
+	<p id="p5">34567</p>
+
+	<script type="text/javascript">
+		var p1 = document.getElementById("p1");
+		p1.style.color="blue";
+		var p2 = document.getElementsByClassName("p2");
+		for (var i = 0; i < 2; i++) {
+			p2[i].style.color="pink";
+		}
+		var p3 = document.getElementsByTagName("p");
+		for (var i = 0; i <= 2; i++) {
+			p3[i].style.color="orange";
+		}
+		var p4 = document.getElementById("p4");
+		console.log(p4.innerHTML);
+		p4.innerHTML ="Thay doi p4";
+
+		var test= document.getElementById("test");
+		console.log(test.type);
+		test.type ="password";
+
+		var p5 = document.getElementById("p5");
+		p5.style.color="red";
+		p5.style.fontSize ="20px";
+		console.log(p5.style.fontSize);
+
+
+	</script>
+	
+</body>
+</html>

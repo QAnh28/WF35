@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>the p</p>
+	<button id="but1"> change color</button>
+
+	<h1> the h1</h1>
+
+	<input type="text" id="inputText">
+	<script type="text/javascript">
+		var but = document.getElementById("but1");
+		but1.addEventListener('click', function(){
+			document.getElementsByTagName("p")[0].style.color ="red";
+		})
+		var h1= document.getElementsByTagName("h1")[0];
+		h1.addEventListener("mouseover", function(){
+			h1.style.color="green";
+		})
+		var h1= document.getElementsByTagName("h1")[0];
+		h1.addEventListener("mouseout", function(){
+			h1.style.color="black";
+		})
+		var inputText= document.getElementById("inputText");
+		inputText.addEventListener("blur", function(){
+			inputText.style.backgroundColor="blue";
+		})
+		var inputText= document.getElementById("inputText");
+		inputText.addEventListener("focus", function(){
+			inputText.style.backgroundColor="yellow";
+		})
+	</script>
+	
+</body>
+</html>

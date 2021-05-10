@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style>
+		.pink{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="test">Hôm nay trời nắng to</h1>
+	<h2 id="test1">Hôm nay </h2> 
+	<input type="text" id="test3" value="XYZ">
+	<p>THẻ p</p>
+
+	<h5>thẻ h5-Remove</h5>
+	<h6>thẻ h6-empty</h6>
+	<b>Mặt trời</b>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			 console.log($("#test").text());
+			 $("#test").text("xin chao");
+
+			 //alert($("#test1").html());
+			 $("#test1").html("<b>xin chao bạn </b>");
+
+			 console.log($("#test3").val());
+			 $("#test3").val("ABC");
+
+			 $("p").css({"color":"red", "background-color":"yellow"});
+
+			 console.log($("p").width());
+			 $("p").width("500");
+			 console.log($("p").height());
+
+			 $("h5").remove();
+			 $("h6").empty();
+
+			 $("p").prepend("ừm,");
+			 $("#test1").before("Ôi!");
+
+			 $("p").append("tạm biệt!");
+			 $("#test1").after("Good!");
+
+			 $("b").addClass("pink");
+			 //$("b").removeClass("pink");
+		})
+	</script>
+	
+</body>
+</html>
